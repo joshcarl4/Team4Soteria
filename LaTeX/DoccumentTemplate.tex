@@ -1,0 +1,160 @@
+\documentclass{article}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage{listings}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{longtable} %for longtabu
+\usepackage{tabu} %for longtabu
+\usepackage{hhline} %for double \hline in longtabu
+\usepackage{tocloft}
+
+
+\usetikzlibrary{automata,positioning}
+
+%
+% Basic Document Settings
+%
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.25in
+
+\linespread{1.1}
+
+\pagestyle{fancy}
+\lhead{\hmwkAuthorName}
+\chead{\hmwkClass}
+\rhead{\hmwkTitle}
+\lfoot{\lastxmark}
+\cfoot{\thepage}
+
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+
+\setlength\parindent{0pt}
+
+%
+% Create Problem Sections
+%
+
+\newcommand{\enterProblemHeader}[1]{
+    \nobreak\extramarks{}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+}
+
+\newcommand{\exitProblemHeader}[1]{
+    \nobreak\extramarks{Problem \arabic{#1} (continued)}{Problem \arabic{#1} continued on next page\ldots}\nobreak{}
+    \stepcounter{#1}
+    \nobreak\extramarks{Problem \arabic{#1}}{}\nobreak{}
+}
+
+%Number the Exercises with one counter through multiple sections
+\newcounter{ExerciseCounter}
+\setcounter{ExerciseCounter}{1} %start counting at 1
+
+%
+% Homework Problem Environment
+%
+% This environment takes an optional argument. When given, it will adjust the
+% problem counter. This is useful for when the problems given for your
+% assignment aren't sequential. See the last 3 problems of this template for an
+% example.
+%
+\newenvironment{homeworkProblem}[1][-1]{
+    \ifnum#1>0
+        \setcounter{homeworkProblemCounter}{#1}
+    \fi
+    \section{Problem \arabic{homeworkProblemCounter}}
+    \setcounter{partCounter}{1}
+    \enterProblemHeader{homeworkProblemCounter}
+}{
+    \exitProblemHeader{homeworkProblemCounter}
+}
+
+%
+% This is what you change if you want to change the name of the doccument
+%
+\newcommand{\hmwkTitle}{Concept of Operations Doccument}
+
+\newcommand{\hmwkClass}{AerE 461}
+\newcommand{\hmwkClassTime}{10:00 am}
+\newcommand{\hmwkClassInstructor}{Thomas Gonzalez-Torres}
+\newcommand{\hmwkAuthorName}{\textbf{Team 4: Soteria}}
+
+%
+% Title Page
+%
+
+\title{
+	\centering
+	\vspace*{0.25 cm}
+	\includegraphics[scale = 0.11]{isu_seal.png}\\[0.75 cm]	% University Logo
+	\textsc{\LARGE IOWA STATE UNIVERSITY}\\[.75 cm]
+	\textsc{\large AEROSPACE ENGINEERING DEPARTMENT}\\[0.2 cm]
+	\textsc{\large Modern Design Methodology with Aerospace Applications}\\[0.2 cm]
+	\textsc{\Large \hmwkClass}\\[0.5 cm]				% Course Code
+	\textsc{\Large Spring 2021}\\[0.5 cm]				% Course Code
+	\textsc{\Large \hmwkTitle}\\[0.2 cm]
+	\rule{\linewidth}{0.2 mm} \\ [0.25 cm]
+		\begin{minipage}{0.8\textwidth}
+		\begin{flushleft}
+		Anthony Ancona\\Josh Carlson\\Brandon Nelson\\ Bruke O'Brien\\Bruno Rangel-Huerta\\Jacob Sandei\\ Carter Williams
+		\end{flushleft}
+		\end{minipage}
+}
+\author{\hmwkAuthorName}
+\date{}
+
+\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+%
+% Various Helper Commands
+%
+
+% Useful for algorithms
+\newcommand{\alg}[1]{\textsc{\bfseries \footnotesize #1}}
+
+% For derivatives
+\newcommand{\deriv}[1]{\frac{\mathrm{d}}{\mathrm{d}x} (#1)}
+
+% For partial derivatives
+\newcommand{\pderiv}[2]{\frac{\partial}{\partial #1} (#2)}
+
+% Integral dx
+\newcommand{\dx}{\mathrm{d}x}
+
+% Alias for the Solution section header
+\newcommand{\solution}{\textbf{\large Solution}}
+
+% Probability commands: Expectation, Variance, Covariance, Bias
+\newcommand{\E}{\mathrm{E}}
+\newcommand{\Var}{\mathrm{Var}}
+\newcommand{\Cov}{\mathrm{Cov}}
+\newcommand{\Bias}{\mathrm{Bias}}
+
+\graphicspath{{./Images/}}
+
+\renewcommand{\thesection}{\Roman{section}} 
+\renewcommand{\thesubsection}{\thesection.\Roman{subsection}}
+\renewcommand\cftsecleader{\cftdotfill{\cftdotsep}}
+
+%
+% Dont forget to check if you want a table of contents
+% \tableofcontents
+% \pagebreak
+%
+\begin{document}
+\maketitle
+\pagebreak
+test
+
+\end{document}
